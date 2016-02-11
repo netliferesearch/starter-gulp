@@ -47,4 +47,12 @@ starterGulp.extendTasks(gulp, {
 		}
 	]
 });
+
+// If you're adding multiple tasks, you will of course want to split
+// it into separate files
+
+starterGulp.extendTasks(gulp, {
+	bar: [require('path/to/bar')] // bar task with no deps
+	foo: [['bar'], require('path/to/foo')] // foo task with dependency on bar
+});
 ```
