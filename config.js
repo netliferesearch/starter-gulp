@@ -21,6 +21,6 @@ module.exports = {
         css: 'dist/css/',
         images: 'dist/images/',
         icons: 'src/html/svg-icons',
-        html: 'dist/site/'
+        html: 'dist/site/**/*'
     }
 };
