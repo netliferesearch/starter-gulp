@@ -20,6 +20,7 @@ module.exports = {
         js: 'dist/js/',
         css: 'dist/css/',
         images: 'dist/images/',
-        icons: 'src/html/svg-icons'
+        icons: 'src/html/svg-icons',
+        html: 'dist/site/'
     }
 };
