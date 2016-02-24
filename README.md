@@ -1,6 +1,25 @@
 # Netlife gulp starter
 Common gulptasks with interface for overriding tasks and configs in starter packs.
 
+## tasks
+
+* `default` = build, browser-sync, watch
+* `build` = assets, browserify, sass
+* `deploy` = assets, build, sass, gh-pages
+* `assets`= images, inline-svg
+
+* `browser-sync`: Synchronized browser
+* `browserify`: Require JS modules
+* `css-stats`: Return JSON with CSS statistic
+* `eslint`: Linting for JS/JSX
+* `gh-pages`: Deploy to Github pages
+* `images`: Minimize images and move them to dist
+* `inline-svg`: Inline an minimize SVG
+* `sass-lint`: Linting for SASS
+* `sass`: Compiles SASS
+* `watch`: Watch files
+
+
 ## Installation
 First install the gulp starter by adding `netliferesearch/starter-gulp` to your `package.json` file, or by simply issuing the following command in the terminal when standing in your projects root folder
 
