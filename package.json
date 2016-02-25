@@ -12,8 +12,6 @@
     "browser-sync": "^2.9.11",
     "browserify": "^13.0.0",
     "eslint-config-vgno": "^5.0.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-cheerio": "^0.6.2",
     "gulp-concat": "^2.6.0",
@@ -33,6 +31,8 @@
     "gulp-svgstore": "^5.0.5",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.7",
-    "lodash.merge": "^4.1.0"
+    "lodash.merge": "^4.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
