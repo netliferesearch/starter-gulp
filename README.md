@@ -57,3 +57,19 @@ starterGulp.extendTasks(gulp, {
 	foo: [['bar'], require('path/to/foo')] // foo task with dependency on bar
 });
 ```
+
+### Accessing the config
+The configuration file is exposed, and is accessable through the `config` property on the `starter-gulp` object, like this:
+
+```js
+var config = require('starter-gulp').config;
+```
+
+### Interacting with browserSync
+If you want to get hold of the browserSync instance in order to trigger reloading or doing other (fun) stuff, you can access it as the `browserSync` property on the `starter-gulp` object, and use it in your task like this:
+
+```js
+var browserSync = require('starter-gulp').browserSync;
+
+gulp.watch('./some/random/folder').on('change', browserSync.reload);
+```
