@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Kristoffer Brabrand <kristoffer@brabrand.no>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/netliferesearch/starter-gulp.git"
+  },
   "peerDependencies": {
     "gulp": "^3.9.0"
   },
