@@ -5,7 +5,7 @@ Common gulptasks with interface for overriding tasks and configs in starter pack
 First install the gulp starter by adding `netliferesearch/starter-gulp` to your `package.json` file, or by simply issuing the following command in the terminal when standing in your projects root folder
 
 ```sh
-npm i --save-dev netliferesearch/starter-gulp
+npm i starter-gulp --save-dev
 ```
 
 If npm ends by telling you something like the line shown below, you need to add `gulp` as a dev dependency in your project.
