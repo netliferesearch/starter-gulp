@@ -9,8 +9,10 @@
     "type": "git",
     "url": "git://github.com/netliferesearch/starter-gulp.git"
   },
+  "peerDependencies": {
+    "gulp": "^3.9.0"
+  },
   "dependencies": {
-    "gulp": "^3.9.0",
     "browser-sync": "^2.9.11",
     "browserify": "^13.0.0",
     "eslint-config-vgno": "^5.0.0",
