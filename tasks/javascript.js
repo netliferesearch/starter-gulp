@@ -2,7 +2,7 @@
 
 var browserSync = require('browser-sync'),
     browserify = require('browserify'),
-    babel = require("gulp-babel"),
+    babelify = require('babelify'),
     buffer = require('vinyl-buffer'),
     gulp = require('gulp'),
     notify = require('gulp-notify'),
@@ -15,7 +15,7 @@ var config = require('../config');
 module.exports = function() {
     var b = browserify();
 
-    b.add(config.src.browserify);
+    b.add(config.src.browserify).transform("babelify", {presets: ["es2015"});
 
     return b.bundle()
         .on('error', notify.onError(function(error) {
@@ -23,9 +23,6 @@ module.exports = function() {
         }))
         .pipe(source('main.js'))
         .pipe(buffer())
-        .pipe(babel({
-			presets: ['es2015']
-		}))
         .pipe(gulp.dest(config.dist.js))
         .pipe(uglify())
         .pipe(rename('main.min.js'))
