@@ -15,7 +15,7 @@ var config = require('../config');
 module.exports = function() {
     var b = browserify();
 
-    b.add(config.src.browserify).transform("babelify", {presets: ["es2015"});
+    b.add(config.src.browserify).transform("babelify", {presets: ["es2015"]});
 
     return b.bundle()
         .on('error', notify.onError(function(error) {
