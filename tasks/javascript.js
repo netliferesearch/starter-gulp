@@ -2,6 +2,7 @@
 
 var browserSync = require('browser-sync'),
     browserify = require('browserify'),
+    babel = require("gulp-babel"),
     buffer = require('vinyl-buffer'),
     gulp = require('gulp'),
     notify = require('gulp-notify'),
@@ -22,6 +23,9 @@ module.exports = function() {
         }))
         .pipe(source('main.js'))
         .pipe(buffer())
+        .pipe(babel({
+			presets: ['es2015']
+		}))
         .pipe(gulp.dest(config.dist.js))
         .pipe(uglify())
         .pipe(rename('main.min.js'))
