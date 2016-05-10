@@ -1,6 +1,6 @@
 {
   "name": "starter-gulp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Gulp tasks used for the netlife research starter",
   "main": "index.js",
   "author": "Kristoffer Brabrand <kristoffer@brabrand.no>",
