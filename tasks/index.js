@@ -16,7 +16,7 @@ module.exports = {
 
 	// Build
 	'sass': [require('./sass')],
-	'javascript': [['lint-js'], require('./javascript')],
+    'javascript': (!production ? ['lint-js'] : []), require('./tasks/browserify'),
 	'gh-pages': [require('./gh-pages')],
 	'watch': [require('./watch')],
 
