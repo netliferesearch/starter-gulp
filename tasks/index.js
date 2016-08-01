@@ -12,12 +12,11 @@ module.exports = {
     // Linting & statistic
     'lint-sass': [require('./lint-sass')],
     'lint-js': [require('./lint-js')],
-    'css-stats': [require('./css-stats')],
 
     // Build
     'sass': [require('./sass')],
     'browserify': [require('./javascript')],
-    'javascript': [['lint-js','browserify']],
+    'javascript': [['lint-js', 'browserify']],
     'gh-pages': [require('./gh-pages')],
     'watch': [require('./watch')],
 
